@@ -27,7 +27,7 @@ public class Alumno {
     @Column(name = "COD_ALUMNO", nullable = false)
     private Integer codAlumno;
 
-    @Column(name = "CEDULA",length = 10)
+    @Column(name = "CEDULA",length = 10,unique = true)
     private String cedula;
 
     @Column(name = "NOMBRE",length = 100)
